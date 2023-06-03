@@ -1,8 +1,8 @@
 pipeline {
     agent any
     triggers{
-        cron('H/30 9 * * 1')
-        pollSCM('H/30 9 * * 1')
+        cron('*/1 * * * * ')
+        pollSCM('*/1 * * * * ')
     }
     stages{
         stage('clone'){
